@@ -24,11 +24,17 @@ class ComposerStaticInitc26bf96e9cfebaf49c8b83bb4500e812
         ),
     );
 
+    public static $classMap = array (
+        'Rotas' => __DIR__ . '/../..' . '/model/Rotas.class.php',
+        'Template' => __DIR__ . '/../..' . '/model/Template.class.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitc26bf96e9cfebaf49c8b83bb4500e812::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitc26bf96e9cfebaf49c8b83bb4500e812::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitc26bf96e9cfebaf49c8b83bb4500e812::$classMap;
 
         }, null, ClassLoader::class);
     }
