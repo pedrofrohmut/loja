@@ -8,5 +8,6 @@
 </head>
 <body>
 Esta é a pagina carregada com o Smarty
+<h2>{$nome}</h2>
 </body>
 </html>

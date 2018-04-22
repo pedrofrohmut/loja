@@ -8,9 +8,10 @@ $smarty->setTemplateDir("./view/");
 $smarty->setCompileDir("./view/compile");
 # Define a pasta do cache
 $smarty->setCacheDir("./view/cache");
-# Mostra o template index da pasta defina por setTemplateDir(<dir_path>)
-$smarty->display("index.tpl");
 
 # Valores para o template
-$smarty->assign("NOME", "HUGA BUGA");
+$smarty->assign('nome', 'HUGA BUGA');
+
+# Mostra o template index da pasta defina por setTemplateDir(<dir_path>)
+$smarty->display("index.tpl");
 ?>
