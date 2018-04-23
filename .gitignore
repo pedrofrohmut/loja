@@ -1,4 +1,7 @@
-/img
 /css
-/fonts
+/lib
+/view/compile
 /view/tema
+/view/backup
+composer.lock
+composerUpdate.bat

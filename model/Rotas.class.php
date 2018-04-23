@@ -33,7 +33,8 @@ class Rotas {
   }
   static function getSiteTema() {
     // return self::getSiteHome() . "/" . Config::PASTA_VIEW . "/" . Config::PASTA_TEMA;
-    return "view/tema";
+    // return "view/tema";
+    return self::getSiteHome() . "/" . Config::PASTA_VIEW . "/" . Config::PASTA_TEMA;
   }
   static function getPaginaCarrinho() {
     return self::getSiteHome() . "/carrinho";
